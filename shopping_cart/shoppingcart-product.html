@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <title>六角血拚賣賣</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="shopping-cart.html">
+            <i class="fas fa-heart text-info" aria-hidden="true"></i>
+            六角血拚賣賣
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-target="#exampleModal1">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                <td class="align-middle">金牌女裝</td>
+                                <td class="align-middle">一件</td>
+                                <td class="align-middle">$480</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-target="#exampleModal2">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                <td class="align-middle">金牌西裝</td>
+                                <td class="align-middle">一件</td>
+                                <td class="align-middle">$960</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">服飾</a></li>
+                <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top" style="top:10px;">
+                    <h1 class="h2">金牌西裝</h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-muted">售價 $ 1299</span>
+                        <div class="h3 ml-auto mb-0 text-danger ">
+                            <small>特價 NT$</small>
+                            <strong>520</strong>
+                        </div>
+                    </div>
+                    <hr> 尺寸:
+                    <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> SM
+                        </label>
+                        <label class="btn btn-outline-secondary disabled">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> MD
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> XL
+                        </label>
+                    </div>
+                    <div class="input-group mt-3">
+                        <select name="" id="" class="form-control mr-1">
+                            <option value="1">1件</option>
+                            <option value="2">2件</option>
+                            <option value="3">3件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary">
+                            加入購物車
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>帥氣的西裝無人能敵</h2>
+                <p class="cart-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti culpa temporibus
+                    porro ad, eveniet rerum itaque! Animi laudantium, voluptas deleniti non neque a temporibus ea,
+                    corrupti placeat tenetur, quam aliquam!
+                </p>
+                <h3 class="mt-5 text-center">合身剪裁</h3>
+                <img class="mw-100 mb-3" src="
+                https://media.istockphoto.com/photos/this-one-match-perfect-with-me-picture-id1293366109    "
+                    alt="suit">
+                <h3 class="mt-5 text-center">簡單就好</h3>
+                <img class="mw-100 mb-3" src="
+                    https://media.istockphoto.com/photos/playing-cards-picture-id496913440    " alt="suit">
+
+
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li>© Copright 2017 六角血拼賣賣
+                    <a href="#" class="ml-1"><i class="fab fa-instagram"></i>instgram</a>
+                    <a href="#" class="ml-1"><i class="fab fa-facebook"></i>facebook</a>
+                    <a href="#" class="ml-1">about</a>
+                </li>
+                <li>
+                    Made with Bootstrap4
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="exampleModalLabel">確認刪除金牌女裝</h5>
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    確認刪除金牌女裝?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="exampleModalLabel">確認刪除金牌西裝</h5>
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    確認刪除金牌西裝?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+                var modal = $(this)
+                modal.find('.modal-title').text('確認刪除' + title) // 寫入資料
+            })
+        });
+    </script>
+</body>
+
+</html>
